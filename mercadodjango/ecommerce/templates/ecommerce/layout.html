@@ -112,12 +112,9 @@
       .card {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         max-width: 300px;
-        margin: auto;
         display: inline-block;
         font-family: arial;
-        margin-left: 40px;
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin: 40px;
       }
 
       .price {
@@ -146,9 +143,7 @@
   <ul>
     <header class="header-container">
       <div class="limiter">
-        <div> <img src="{% static 'imagens/sk8.jpeg' %}" width="20%"></div>
-        
-        <input class="search" type="text" />
+        <img src="{% static 'imagens/sk8.png' %}" alt='logo' width="20%">
         
         <div class="button-section">
           <li class="nav-item">
@@ -168,22 +163,36 @@
 
 
 
-    
-    <div class="card">
-      <img src="/imagens/sk8.jpeg" alt="Denim Jeans" style="width:100%">
-      <h1>Tailored Jeans</h1>
-      <p class="price">$19.99</p>
-      <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-      <p><button>Add to Cart</button></p>
+    <div align='center'>
+      <div class="card">
+        <img src="{% static 'imagens/skate.jfif' %}" alt="Skate" style="width:100%">
+        <h1>Skate Akatsuki</h1>
+        <p class="price">R$399,90</p>
+        <p>Rolamentos ABEC 9 - Prancha 9 Folhas - Trucks Edição Limitada</p>
+        <p><button>Adicionar no Carrinho</button></p>
+      </div>
+      <div class="card">
+        <img src="{% static 'imagens/eyeball.png' %}" alt="Longboard" style="width:100%">
+        <h1>Longboard Eyeball</h1>
+        <p class="price">R$699,90</p>
+        <p>Rolamentos ABEC 13 - Prancha Reforçada Double Deck - Trucks Em Alumínio</p>
+        <p><button>Adicionar no Carrinho</button></p>
+      </div>
+      <div class="card">
+        <img src="{% static 'imagens/minilong.jpg' %}" alt="Minilong" style="width:100%">
+        <h1>Minilong</h1>
+        <p class="price">R$199,90</p>
+        <p>Rolamentos ABEC 5 - Prancha em plástico High Performance - Trucks Em Ferro</p>
+        <p><button>Adicionar no Carrinho</button></p>
+      </div>
+      <div class="card">
+        <img src="{% static 'imagens/downhill.jpg' %}" alt="Minilong" style="width:100%">
+        <h1>Longboard Downhill</h1>
+        <p class="price">R$899,90</p>
+        <p>Rolamento Redbones - Prancha Compensado Aerodynamics - Trucks Blend</p>
+        <p><button>Adicionar no Carrinho</button></p>
+      </div>
     </div>
-    <div class="card">
-      <img src="/imagens/sk8.jpeg" alt="Denim Jeans" style="width:100%">
-      <h1>Tailored Jeans</h1>
-      <p class="price">$19.99</p>
-      <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
-      <p><button>Add to Cart</button></p>
-    </div>
-
 
     <div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
       <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
@@ -211,35 +220,35 @@
       <div class="carousel-inner relative w-full overflow-hidden">
         <div class="carousel-item active relative float-left w-full">
           <img
-            src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg"
+            src="{% static 'imagens/tonyhawk.jpg' %}"
             class="block w-full"
             alt="..."
           />
           <div class="carousel-caption hidden md:block absolute text-center">
-            <h5 class="text-xl">First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+            <h5 class="text-xl">Quem é Tony Hawk?</h5>
+            <p>Descubra quem é a lenda Tony Hawk, mundialmente famoso no mundo do skate</p>
           </div>
         </div>
         <div class="carousel-item relative float-left w-full">
           <img
-            src="https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg"
+          src="{% static 'imagens/bobburnquist.png' %}"
             class="block w-full"
             alt="..."
           />
           <div class="carousel-caption hidden md:block absolute text-center">
-            <h5 class="text-xl">Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
+            <h5 class="text-xl">Bob Burnquist: O Maior Medalhista do X Games</h5>
+            <p>Bob Burnquist, o brasilo-estadunidense com maior número de medalhas no X Games, que muitos o conhecem através dos primeiros jogos de Tony Hawk</p>
           </div>
         </div>
         <div class="carousel-item relative float-left w-full">
           <img
-            src="https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg"
+            src="{% static 'imagens/rayssaleal.jpg' %}"
             class="block w-full"
             alt="..."
           />
           <div class="carousel-caption hidden md:block absolute text-center">
-            <h5 class="text-xl">Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+            <h5 class="text-xl">Rayssa Leal: Uma Lenda em Ascensão</h5>
+            <p>Nossa jóvem Rayssa Leal, medalhista prata na categoria street skate nas olimpíadas de Tóquio de 2020</p>
           </div>
         </div>
       </div>
@@ -269,29 +278,19 @@
       <div class="container p-6 text-gray-800">
         <div class="grid lg:grid-cols-2 gap-4">
           <div class="mb-6 md:mb-0">
-            <h5 class="font-medium mb-2 uppercase">Footer text</h5>
+            <h5 class="font-medium mb-2 uppercase">Universidade de Vassouras</h5>
 
             <p class="mb-4">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-              molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
-              aliquam voluptatem veniam, est atque cumque eum delectus sint!
+              Projeto de Ecommerce em Django, para Laboratório de Programação com Framework. <br> Engenharia de Software, Quinto Período.
             </p>
           </div>
 
-          <div class="mb-6 md:mb-0">
-            <h5 class="font-medium mb-2 uppercase">Footer text</h5>
-
-            <p class="mb-4">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-              molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
-              aliquam voluptatem veniam, est atque cumque eum delectus sint!
-            </p>
-          </div>
+          
         </div>
       </div>
 
       <div class="text-center text-gray-700 p-4" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2021 Copyright:
+        © 2022 Copyright:
         <a class="text-gray-800" href="https://tailwind-elements.com/">Daniel Quinan - 202011766</a>
       </div>
 </footer>
